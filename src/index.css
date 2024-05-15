@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin-left: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #fff;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+.radio {
+  display: inline-flex;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  width: fit-content;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+h1,
+h2,
+h3 {
+  color: #050b0a;
+}
+
+.question {
+  margin-bottom: 15px;
+}
+
+.radio-label:not(last-of-type) {
+  border-right: 1px solid #006b56;
+}
+
+.radio label,
+.second-radio label {
+  padding: 8px 14px;
+  font-size: 14px;
+  background: #009578;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+.radio input[type="radio"]:checked + label {
+  background: #006b56;
+}
+
+.next,
+.test-step {
+  /* background: #009578; */
+  color: #fff;
+  transition: 0.25s ease;
+  /* padding: 8px 14px; */
+  font-size: 14px;
+  border-radius: 15px;
+}
+
+.hidden {
+  display: none;
+}
+.next-active {
+  display: block;
+  transition: 0.25s ease;
+}
+
+.result,
+.result-double {
+  background: #006b56;
+  padding: 20px;
+  width: 550px;
+  border: 1px dashed white;
+  border-radius: 10px;
+}
+
+.result p,
+.result-double {
+  font-size: 18px;
+}
+.result-double p:last-of-type {
+  margin-top: 15px;
+}
+
+.result,
+.result-double ul {
+  margin-left: 20px;
+}
+
+.result-double li {
+  font-size: 16px;
+}
+
+.start-over-btn {
+  cursor: pointer;
+  position: fixed;
+  font-size: 16px;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 14px;
+  border: 1px solid #006b56;
+  color: #006b56;
+  background: transparent;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.icon {
+  margin-bottom: -5px;
+}
+
+.start-over-btn:hover {
+  border: 1px solid #006b56;
+  color: white;
+  background: #009578;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    width: 95vw;
+    margin-left: 2.5vw;
+  }
+
+  .result,
+  .result-double {
+    width: 100%;
+  }
+}
