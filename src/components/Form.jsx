@@ -64,7 +64,7 @@ const Form = () => {
   }, []);
 
   return (
-    <>
+    <main>
       {" "}
       <FirstStep />
       <SecondStep />
@@ -75,7 +75,7 @@ const Form = () => {
       <SeventhStep />
       <EighthStep />
       <StartOver />
-    </>
+    </main>
   );
 };
 export default Form;

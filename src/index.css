@@ -12,6 +12,11 @@ body {
   color: #fff;
 }
 
+main {
+  width: 50%;
+  margin: 0 auto;
+}
+
 .step {
   display: flex;
   flex-direction: column;
@@ -130,6 +135,10 @@ h3 {
   body {
     width: 95vw;
     margin-left: 2.5vw;
+  }
+
+  main {
+    width: 100%;
   }
 
   .result,
